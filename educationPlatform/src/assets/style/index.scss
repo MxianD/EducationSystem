@@ -1,0 +1,9 @@
+@use 'element-plus/theme-chalk/src/common/var' with (
+  $colors: (
+    'primary': (
+      'base': #6c9,
+    )
+  )
+);
+// 导入所有样式:
+ @use "element-plus/theme-chalk/src/index.scss" as *;

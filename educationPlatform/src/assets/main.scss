@@ -1,0 +1,31 @@
+/** {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}*/
+@use '@/assets/style/variables' as *;
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* fade-slide */
+.fade-slide-leave-active,
+.fade-slide-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-slide-enter-from {
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.fade-slide-leave-to {
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+// 设置全局提示框，只要超过了header(2500)的z-index
+.el-message {
+  z-index: $zindex-el-message !important;
+}

@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34601215",
+      "name": "认证",
+      "font_class": "renzheng",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    }
+  ]
+}
