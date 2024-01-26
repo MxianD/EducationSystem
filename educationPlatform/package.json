@@ -17,6 +17,7 @@
     "path": "^0.12.7",
     "pinia": "^2.1.7",
     "pinia-plugin-persistedstate": "^3.2.1",
+    "require.js": "^1.0.0",
     "sass": "^1.70.0",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"

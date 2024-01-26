@@ -41,7 +41,7 @@
           </el-button>
           <!-- 登录/用户头像 -->
           <template v-if="!isUserLoggedIn">
-            <el-button text type="primary" @click="login" class="login-btn">登录</el-button>
+            <el-button text type="success" @click="login" class="login-btn">登录</el-button>
           </template>
           <el-dropdown v-else @command="dropdownCommand" trigger="hover">
             <span class="el-dropdown__box">
