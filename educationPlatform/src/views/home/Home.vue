@@ -16,7 +16,7 @@
                 width="100%"
                 height="100%"
                 :src="homeCarouselImgUrl[item - 1]"
-                :fit="scale - down"
+                fit="scale-down"
               />
             </el-carousel-item>
           </el-carousel>
@@ -49,13 +49,14 @@
           <el-row :gutter="20" v-for="e in 3" :key="e">
             <el-col v-for="o in 4" :key="o" :span="6"
               ><div class="grid-content">
-                <el-card class="box-card">
+                <router-link :to="{ name: 'CourseDetail', params: { id: 'erina' }}">
+                  <el-card class="box-card">
                   <div class="course-image">
                     <el-image
                       width="100%"
                       height="100%"
                       :src="courseCardImgUrl[4*(e-1)+o-1]"
-                      :fit="scale - down"
+                      fit="scale-down"
                     />
                   </div>
                   <div class="text item course-info">
@@ -68,6 +69,8 @@
                     </div>
                   </div>
                 </el-card>
+                </router-link>
+
               </div></el-col
             >
           </el-row>
@@ -138,6 +141,7 @@ const login = () => {
     router.push("/login");
   }
 };
+
 </script>
 
 <style scoped>
